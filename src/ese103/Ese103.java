@@ -19,6 +19,22 @@ public class Ese103 {
             System.out.println(a + " contiene " + b);
             else
             System.out.println(a + " NON contiene " + b);
-        }   
+        }
+        
+        Triangle triangleArray[] =  new Triangle[3];
+        triangleArray[0] = new Triangle(0, 0, 1);
+        triangleArray[1] = new Triangle(0.5, 0.5, 0.5);
+        triangleArray[2] = new Triangle(1, 1, 1);
+        Triangle c, d;
+
+        for(int i=0; i<triangleArray.length; i++) {
+            c = triangleArray[i];
+            d = triangleArray[(i+1) % triangleArray.length];
+
+            if(c.contains(d))
+            System.out.println(c + " contiene " + d);
+            else
+            System.out.println(c + " NON contiene " + d);
+         }
     }
 }

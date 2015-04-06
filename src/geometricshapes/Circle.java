@@ -72,7 +72,24 @@ public class Circle {
         }
         return contains;
     }
-
+    
+    public boolean contains(Triangle t) {
+        boolean contains = true;
+        if(this.getXMin() > t.getXMin()){
+            contains = false;
+        }
+        if(this.getYMin() > t.getYMin()){
+            contains = false;
+        }
+        if(this.getXMax() < t.getXMax()){
+            contains = false;
+        }
+        if(this.getYMax() < t.getYMax()){
+            contains = false;
+        }
+        return contains;
+    } 
+    
     @Override
     public String toString() {
             return "Circle [xC=" + xC + ", yC=" + yC + ", r=" + r + "]";
