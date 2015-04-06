@@ -5,13 +5,17 @@ import geometricshapes.*;
 public class Ese103 {
 
     public static void main(String[] args) {
-        GeometricShape shapeArray[] = new GeometricShape[6];
-        shapeArray[0] = new Circle(0, 0, 1);
-        shapeArray[1] = new Circle(0, 0, 0.5);
-        shapeArray[2] = new Circle(0.5, 0.5, 1);
-        shapeArray[3] = new Triangle(0, 0, 1);
-        shapeArray[4] = new Triangle(0, 0, 0.5);
-        shapeArray[5] = new Triangle(0.5, 0.5, 1);
+        
+        GeometricShape shapeArray[] = new GeometricShape[8];
+        shapeArray[0] = new Circle(1, 1, 1);
+        shapeArray[1] = new Circle(1, 1, 0.5);
+        shapeArray[2] = new Triangle(1, 1, 1);
+        shapeArray[3] = new Triangle(1, 1, 0.5);
+        shapeArray[4] = new Rectangle(1, 1, 1, 2);
+        shapeArray[5] = new Rectangle(1, 1, 0.5, 1);
+        shapeArray[6] = new Square(1, 1, 1);
+        shapeArray[7] = new Square(1, 1, 0.5);
+        
         
         for(GeometricShape a: shapeArray){
             for(GeometricShape b: shapeArray){
@@ -27,4 +31,5 @@ public class Ese103 {
             }  
         }
     }
+        
 }
