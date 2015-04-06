@@ -1,6 +1,6 @@
 package geometricshapes; 
 
-public class Triangle {
+public class Triangle extends GeometricShape{
     private double xV;
     private double yV;
     private double l;
@@ -38,18 +38,22 @@ public class Triangle {
             this.l=l;
     }
     
+    @Override
     public double getXMin(){
         double xMin=xV-l;
         return xMin;
     }
+    @Override
     public double getYMin(){
         double yMin=yV-l;
         return yMin;
     }
+    @Override
     public double getXMax(){
         double xMax=xV+l;
         return xMax;
     }
+    @Override
     public double getYMax(){
         double yMax=yV+l;
         return yMax;

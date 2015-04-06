@@ -1,6 +1,6 @@
 package geometricshapes;
 
-public class Circle {
+public class Circle extends GeometricShape{
     private double xC;
     private double yC;
     private double r;
@@ -38,18 +38,22 @@ public class Circle {
     }
     
     
+    @Override
     public double getXMin(){
         double xMin=xC-r;
         return xMin;
     }
+    @Override
     public double getYMin(){
         double yMin=yC-r;
         return yMin;
     }
+    @Override
     public double getXMax(){
         double xMax=xC+r;
         return xMax;
     }
+    @Override
     public double getYMax(){
         double yMax=yC+r;
         return yMax;
